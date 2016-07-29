@@ -1,10 +1,26 @@
 doctype html
 html
     head
-        title Sync Player
+        title Chat Player
             if useExternalStyles
                 link(rel='stylesheet', href='/build/application.css')
     body
-        h1 Hello, world
+        .site-wrap
+            .column.left
+                section.playlist
+                    h1
+                        i.fa.fa-circle-o-notch.fa-spin
+            .column.center
+                section.player
+                    h1
+                        i.fa.fa-circle-o-notch.fa-spin
+                section.chat
+                    h1
+                        i.fa.fa-circle-o-notch.fa-spin
+            .column.right
+                section.users
+                    h1
+                        i.fa.fa-circle-o-notch.fa-spin
+        h1 hello
         script(src='/build/vendor.js')
         script(src='/build/application.js')
